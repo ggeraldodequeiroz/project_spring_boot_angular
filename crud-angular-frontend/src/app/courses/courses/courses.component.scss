@@ -1,12 +1,18 @@
-.mat-table {
-  overflow: auto;
-  max-height: 600px;
+table {
+  width: 100%;
 }
 
-.action-column {
-  flex: 0 0 125px;
+.loading-spinner {
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.action-column-header {
-  margin: 0 auto;
+.list-courses {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
