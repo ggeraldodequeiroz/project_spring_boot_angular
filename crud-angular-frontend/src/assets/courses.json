@@ -1,12 +1,12 @@
 [
   { "_id": "1", "name": "Angular", "category": "front-end" },
+  { "_id": "1", "name": "Java", "category": "back-end" },
   { "_id": "1", "name": "Angular", "category": "front-end" },
-  { "_id": "1", "name": "Angular", "category": "front-end" },
-  { "_id": "1", "name": "Angular", "category": "front-end" },
-  { "_id": "1", "name": "Angular", "category": "front-end" },
-  { "_id": "1", "name": "Angular", "category": "front-end" },
-  { "_id": "1", "name": "Angular", "category": "front-end" },
-  { "_id": "1", "name": "Angular", "category": "front-end" },
-  { "_id": "1", "name": "Angular", "category": "front-end" },
-  { "_id": "1", "name": "Angular", "category": "front-end" }
+  { "_id": "1", "name": "C#", "category": "back-end" },
+  { "_id": "1", "name": "Node", "category": "back-end" },
+  { "_id": "1", "name": "CSS", "category": "front-end" },
+  { "_id": "1", "name": "Javascript", "category": "front-end" },
+  { "_id": "1", "name": "HTML", "category": "front-end" },
+  { "_id": "1", "name": "PHP", "category": "back-end" },
+  { "_id": "1", "name": "Python", "category": "back-end" }
 ]
