@@ -1,9 +1,11 @@
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { Router, ActivatedRoute } from '@angular/router';
+import { catchError, Observable, of } from 'rxjs';
+
+import { CoursesService } from '../services/courses.service';
 import { ErrorDialogComponent } from './../../shared/components/error-dialog/error-dialog.component';
 import { Course } from './../model/course';
-import { Component } from '@angular/core';
-import { CoursesService } from '../services/courses.service';
-import { catchError, Observable, of } from 'rxjs';
-import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-courses',
@@ -13,11 +15,13 @@ import { MatDialog } from '@angular/material/dialog';
 export class CoursesComponent {
 
   courses$: Observable<Course[]>;
-  displayedColumns = ['name','category'];
+  displayedColumns = ['_id','name','category','actions'];
 
   constructor(
-    private coursesService: CoursesService,
-    private dialog: MatDialog
+      private coursesService: CoursesService,
+      private dialog: MatDialog,
+      private router: Router,
+      private route: ActivatedRoute
     ) {
     this.courses$ = this.coursesService.list()
       .pipe(
@@ -34,8 +38,10 @@ export class CoursesComponent {
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
 
+  adicionar() {
+    this.router.navigate(['new'], { relativeTo: this.route });
   }
 
 }
