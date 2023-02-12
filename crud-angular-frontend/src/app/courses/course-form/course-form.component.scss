@@ -1,6 +1,7 @@
-mat-card, mat-card-actions {
+mat-card {
   max-width: 80%;
   margin: 2em auto;
+  text-align: center;
 }
 
 .full-width {
@@ -9,5 +10,13 @@ mat-card, mat-card-actions {
 
 .min-width {
   width: 100%;
+}
+
+.actions-center {
+  justify-content: center;
+}
+
+.btn-space {
+  margin-left: 5px;
 }
 
